@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0e5">\n<link rel="manifest" href="manifest.webmanifest">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>NEUROGENESIS | 8-Month Evolution</title>
+<style>
+:root{--bg:#fffaf2;--panel:#ffffff;--panel2:#fff3e8;--line:#f0dfd1;--gold:#e58a45;--gold2:#bd5d2d;--text:#3c3440;--muted:#827987;--green:#4b9c78;--blue:#5b8fc4;--pink:#ce78a4;--red:#cf655c;--lav:#8d7ac4}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 8% 5%,#ffe4ed 0,transparent 28%),radial-gradient(circle at 95% 0%,#e1f4ef 0,transparent 27%),linear-gradient(135deg,#fffaf2,#f8f5ff);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.7}
+.wrap{max-width:1050px;margin:auto;padding:18px 14px 50px}.hero{padding:22px 18px;border:1px solid #f1cda9;border-radius:22px;background:linear-gradient(125deg,#fff0d9,#ffe8ef 55%,#e9f5f0);position:relative;overflow:hidden}
+.hero:after{content:"✧";position:absolute;left:22px;top:0;font-size:100px;color:#d8875820}
+.kicker{color:#bd6b36;font-size:11px;letter-spacing:3px;direction:ltr;text-align:right}.hero h1{font-size:clamp(25px,6vw,42px);margin:5px 0 0;letter-spacing:1px;direction:ltr;text-align:right;color:#634b62}.hero p{color:#756878;margin:4px 0 14px;font-size:13px}.heroRow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.pill{border:1px solid #e6c19d;color:#9a5b36;background:#fff9ef;border-radius:99px;padding:5px 11px;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px;margin-top:14px}.card{background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:17px;padding:15px;min-width:0;box-shadow:0 5px 18px rgba(109,82,100,.055)}.span3{grid-column:span 3}.span4{grid-column:span 4}.span5{grid-column:span 5}.span6{grid-column:span 6}.span7{grid-column:span 7}.span8{grid-column:span 8}.span12{grid-column:span 12}
+h2{font-size:15px;margin:0 0 12px;color:#a75e3e}h3{font-size:13px;margin:0 0 7px}.muted{color:var(--muted);font-size:12px}.big{font-size:27px;font-weight:bold;direction:ltr;text-align:right;color:#bd7842;line-height:1.3}.statlabel{font-size:11px;color:var(--muted)}
+.bar{height:9px;background:#f2e8e5;border-radius:20px;overflow:hidden;margin:9px 0}.bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#e7a35e,#d77da6,#83bca7);border-radius:20px;transition:width .3s}
+.stats{display:flex;justify-content:space-between;gap:8px;align-items:center}.stat{min-width:0}.stat .big{font-size:23px}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:1px solid #e7c9ad;background:#fff1e3;color:#8b583c;border-radius:10px;padding:9px 12px;font-size:12px;min-height:40px}button.primary{background:linear-gradient(120deg,#f1b66f,#e98b83);color:#fff;border:0;font-weight:bold}button.ghost{background:#f5f1ff;border-color:#e2d9f2;color:#62557d}button.danger{border-color:#efc3c0;color:#a34e4a;background:#fff0ef}button:disabled{opacity:.4;cursor:not-allowed}
+input,select,textarea{background:#fffdfb;border:1px solid #e8dcd8;border-radius:9px;color:var(--text);padding:10px;width:100%;min-height:42px;font-size:14px}label{font-size:11px;color:var(--muted);display:block;margin:8px 0 4px}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row>*{flex:1;min-width:90px}.task{display:flex;gap:9px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #f1e9e5}.task:last-child{border:0}.task input{width:19px;min-width:19px;height:19px;min-height:19px;margin-top:4px;accent-color:#d78a65}.task.done .taskText{text-decoration:line-through;color:#aaa1aa}.taskText{font-size:13px;flex:1}.tag{font-size:10px;color:#a76a46;border:1px solid #ead2bd;border-radius:20px;padding:2px 7px;white-space:nowrap}
+.list{display:grid;gap:8px}.item{padding:10px;border:1px solid #eee2dc;border-radius:11px;background:#fffdfb}.itemTop{display:flex;justify-content:space-between;gap:8px;align-items:center}.item small{color:var(--muted)}.empty{color:#99919c;font-size:12px;padding:10px 0}
+.tabs{display:flex;gap:7px;overflow:auto;padding:12px 0 2px}.tabs button{white-space:nowrap;flex:0 0 auto}.tabs button.active{background:#e8bd68;color:#171717;border-color:#e8bd68}
+.section{display:none}.section.active{display:block}
+.badges{display:flex;gap:8px;flex-wrap:wrap}.badge{border:1px solid #e7d9c9;background:#fff5e8;padding:8px 10px;border-radius:10px;font-size:11px;color:#87634a}.badge.lock{opacity:.42;filter:grayscale(1)}
+.map{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.month{border:1px solid #e7dcd7;border-radius:10px;padding:10px 6px;text-align:center;background:#fffaf7}.month strong{display:block;color:#a76a46;font-size:12px}.month small{font-size:10px;color:var(--muted)}.month.current{border-color:#e6a96b;background:#fff0dc}.month.complete{border-color:#8ab99e;background:#eaf6ee}
+.reward{display:flex;justify-content:space-between;gap:8px;align-items:center}.reward button{flex:0 0 auto}.tiny{font-size:10px;color:var(--muted)}
+hr{border:0;border-top:1px solid var(--line);margin:13px 0}
+footer{text-align:center;color:#9b929d;font-size:10px;padding:20px 0 0;direction:ltr}
+@media(max-width:700px){.span3,.span4,.span5,.span6,.span7,.span8{grid-column:span 12}.map{grid-template-columns:repeat(2,minmax(0,1fr))}.wrap{padding:12px 10px 35px}.hero{padding:18px 14px}}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+<header class="hero">
+ <div class="kicker">YOUR 8-MONTH EVOLUTION PROJECT</div>
+ <h1>NEUROGENESIS</h1>
+ <p>One brain. A thousand possibilities. Let's evolve.</p>
+ <div class="heroRow"><span class="pill">🧠 BOARD QUEST</span><span class="pill">⚡ XP • LEVELS • REWARDS</span><span class="pill" id="today"></span></div>
+</header>
+
+<div class="grid">
+ <section class="card span3"><div class="statlabel">TOTAL EXPERIENCE</div><div class="big" id="xp">0 XP</div><div class="muted" id="levelName">Level 1 · Initiate</div><div class="bar"><i id="levelBar"></i></div><div class="tiny" id="nextLevel">0 / 100 XP تا سطح بعد</div></section>
+ <section class="card span3"><div class="statlabel">STUDY TIME</div><div class="big" id="studyTotal">0</div><div class="statlabel">دقیقه مطالعه ثبت‌شده</div></section>
+ <section class="card span3"><div class="statlabel">QUESTIONS SOLVED</div><div class="big" id="questionTotal">0</div><div class="statlabel">تست ثبت‌شده</div></section>
+ <section class="card span3"><div class="statlabel">DAYS TO BOARD</div><div class="big" id="countdown">—</div><label for="boardDate">تاریخ هدف (قابل تغییر)</label><input id="boardDate" type="date"></section>
+
+ <section class="card span7">
+  <h2>🗺 نقشه هشت مرحله‌ای سفر</h2>
+  <div class="map" id="monthMap"></div>
+  <p class="muted">هر ماه را با تکمیل هدف مطالعاتی خودت علامت بزن. تاریخ بورد را در کادر بالا تنظیم کن.</p>
+  <div class="row"><input id="monthNote" placeholder="یادداشت یا هدف این ماه"><button id="saveMonth" class="ghost">ذخیره هدف ماه</button></div>
+ </section>
+ <section class="card span5">
+  <h2>⚔️ مأموریت امروز</h2>
+  <div class="muted" id="missionDate"></div>
+  <div id="tasks" class="list"></div>
+  <hr>
+  <div class="row"><input id="newTask" placeholder="مأموریت جدید..."><button id="addTask">+ افزودن</button></div>
+  <p class="tiny">با تیک زدن هر مأموریت، XP دریافت می‌کنی. مأموریت‌ها روزانه‌اند.</p>
+ </section>
+
+ <section class="card span6">
+  <h2>➕ ثبت فعالیت و دریافت XP</h2>
+  <div class="row">
+   <div><label for="activityType">نوع فعالیت</label><select id="activityType"><option value="study">مطالعه متمرکز (هر ۳۰ دقیقه = ۱۰ XP)</option><option value="test">حل تست (هر ۲۰ تست = ۱۵ XP)</option><option value="recall">مرور فعال یک مبحث (۱۵ XP)</option><option value="chapter">تکمیل یک فصل (۳۰ XP)</option><option value="exam">آزمون هفتگی (۴۰ XP)</option></select></div>
+   <div><label for="activityAmount">مقدار</label><input id="activityAmount" type="number" min="1" value="30"></div>
+  </div>
+  <label for="activityNote">موضوع / توضیح (اختیاری)</label><input id="activityNote" placeholder="مثلاً Stroke – Thrombolysis">
+  <div class="row" style="margin-top:10px"><button class="primary" id="logActivity">ثبت فعالیت</button><span class="muted" id="activityHint">۳۰ دقیقه = ۱۰ XP</span></div>
+  <hr><div class="stats"><div><div class="big" id="todayXP">0</div><div class="statlabel">XP امروز</div></div><div><div class="big" id="todayMinutes">0</div><div class="statlabel">دقیقه امروز</div></div><div><div class="big" id="todayTests">0</div><div class="statlabel">تست امروز</div></div></div>
+ </section>
+
+ <section class="card span6">
+  <h2>🏆 Achievementها</h2><div class="badges" id="badges"></div>
+  <hr><h3>آخرین دستاوردها</h3><div id="recent" class="list"></div>
+ </section>
+
+ <section class="card span6">
+  <h2>🎁 فروشگاه پاداش</h2>
+  <p class="muted">پاداش‌ها را با XP خرج کن؛ پاداش‌های واقعی و تجربه‌های تازه را از قلم ننداز.</p>
+  <div class="list" id="rewards"></div>
+  <hr><h3>افزودن پاداش دلخواه</h3>
+  <div class="row"><input id="rewardName" placeholder="مثلاً جلسه کافه / خرید کتاب"><input id="rewardCost" type="number" min="1" placeholder="هزینه XP"></div>
+  <button id="addReward" class="ghost" style="margin-top:8px">+ افزودن به فروشگاه</button>
+ </section>
+
+ <section class="card span6">
+  <h2>🌱 Skill Tree | زندگی موازی</h2>
+  <p class="muted">مهارت‌هایی که با پیشرفت مطالعاتی برای خودت باز می‌کنی.</p>
+  <div class="list" id="skills"></div>
+ </section>
+
+ <section class="card span12">
+  <h2>📓 دفتر ثبت فیزیکی؛ نسخه همراه داشبورد</h2>
+  <p class="muted">برای دفتر کاغذی‌ات، هر روز فقط این سه مورد را بنویس:</p>
+  <div class="grid" style="margin-top:0">
+   <div class="item span4"><strong>۱. مأموریت اصلی امروز</strong><p class="tiny">یک خروجی مشخص، نه یک عنوان کلی.</p></div>
+   <div class="item span4"><strong>۲. چیزی که یاد گرفتم</strong><p class="tiny">سه نکته‌ای که بدون کتاب می‌توانم توضیح بدهم.</p></div>
+   <div class="item span4"><strong>۳. پیروزی امروز</strong><p class="tiny">حتی اگر کوچک بود، ثبتش کن.</p></div>
+  </div>
+  <label for="journal">یادداشت امروز</label><textarea id="journal" rows="3" placeholder="امروز چه چیزی خوب پیش رفت؟ فردا اولین قدمم چیست؟"></textarea>
+  <button id="saveJournal" class="ghost" style="margin-top:8px">ذخیره یادداشت</button><span id="journalSaved" class="tiny"></span>
+ </section>
+
+ <section class="card span12">
+  <h2>📈 تاریخچه فعالیت‌ها</h2><div id="history" class="list"></div>
+  <div class="row" style="margin-top:12px"><button id="exportData" class="ghost">⬇ دریافت نسخه پشتیبان</button><label class="ghost" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid #303646;border-radius:10px;padding:8px 12px;min-height:40px;color:#f2f0eb;cursor:pointer">⬆ بازیابی نسخه پشتیبان<input id="importData" type="file" accept="application/json" style="display:none"></label><button id="reset" class="danger">بازنشانی کامل</button></div>
+  <p class="tiny">اطلاعات در حافظه مرورگر همین دستگاه ذخیره می‌شود. هر چند وقت یک‌بار نسخه پشتیبان بگیر.</p>
+ </section>
+</div>
+<footer>NEUROGENESIS • BUILT FOR YOUR NEXT EVOLUTION</footer>
+</div>
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const todayKey=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+const faDate=d=>new Intl.DateTimeFormat('fa-IR',{year:'numeric',month:'long',day:'numeric'}).format(d);
+const defaultState=()=>({xp:0,minutes:0,tests:0,activities:[],daily:{},rewards:[{name:'یک قهوه یا نوشیدنی خاص',cost:60},{name:'کافه یا صبحانه بیرون',cost:180},{name:'یک تجربه یا گردش تازه',cost:350},{name:'ثبت‌نام یک جلسه فن بیان',cost:650}],skills:[{name:'فن بیان و سخنوری',unlock:100,detail:'شروع کلاس یا یک جلسه آموزش'},{name:'بداهه‌گویی',unlock:250,detail:'تمرین پاسخ‌گویی و صحبت فی‌البداهه'},{name:'تجربه اجتماعی تازه',unlock:450,detail:'یک کارگاه یا جمع جدید'},{name:'خلاقیت و هنر',unlock:700,detail:'شروع یک تجربه هنری'}],unlocked:[],redeemed:[],completedMonths:[],monthGoals:{},boardDate:'',journal:{},tasks:{},customRewards:[]});
+let s;try{s=JSON.parse(localStorage.getItem('neurogenesis_v1'))||defaultState()}catch(e){s=defaultState()}
+function save(){localStorage.setItem('neurogenesis_v1',JSON.stringify(s))}
+const levelNames=['Initiate','Curious Mind','Neuro Explorer','Clinical Thinker','Neuro Detective','Diagnostic Master','Board Warrior','Neuro Champion','Legend'];
+function level(){return Math.floor(s.xp/250)+1}
+function addXP(n){s.xp=Math.max(0,s.xp+n);save();render()}
+function day(){if(!s.daily[todayKey()])s.daily[todayKey()]={xp:0,minutes:0,tests:0};return s.daily[todayKey()]}
+function render(){
+ $('today').textContent=faDate(new Date());$('missionDate').textContent=faDate(new Date());
+ $('xp').textContent=s.xp.toLocaleString('en-US')+' XP';let lv=level(),into=s.xp%250;
+ $('levelName').textContent='Level '+lv+' · '+(levelNames[Math.min(lv-1,levelNames.length-1)]);
+ $('levelBar').style.width=(into/250*100)+'%';$('nextLevel').textContent=into+' / 250 XP تا سطح بعد';
+ $('studyTotal').textContent=s.minutes.toLocaleString('en-US');$('questionTotal').textContent=s.tests.toLocaleString('en-US');
+ let bd=$('boardDate');if(!bd.value)bd.value=s.boardDate||'';let date=bd.value?new Date(bd.value+'T00:00:00'):null;
+ $('countdown').textContent=date?Math.max(0,Math.ceil((date-new Date(new Date().toDateString()))/86400000)).toLocaleString('en-US'):'تنظیم نشده';
+ const d=day();$('todayXP').textContent=d.xp;$('todayMinutes').textContent=d.minutes;$('todayTests').textContent=d.tests;
+ renderTasks();renderMap();renderBadges();renderRewards();renderSkills();renderHistory();
+}
+function renderTasks(){
+ const key=todayKey();let arr=s.tasks[key]||[{text:'یک بلوک مطالعه متمرکز',done:false},{text:'بازیابی فعال نکات بدون نگاه به کتاب',done:false},{text:'حل چند تست از مبحث امروز',done:false}];
+ s.tasks[key]=arr;save();$('tasks').innerHTML='';
+ arr.forEach((t,i)=>{let div=document.createElement('div');div.className='task'+(t.done?' done':'');let cb=document.createElement('input');cb.type='checkbox';cb.checked=t.done;cb.addEventListener('change',()=>{if(!t.done){t.done=true;day().xp+=10;s.xp+=10;s.activities.unshift({date:key,label:'تکمیل مأموریت: '+t.text,xp:10});save();render()}else{t.done=false;day().xp=Math.max(0,day().xp-10);s.xp=Math.max(0,s.xp-10);save();render()}});let tx=document.createElement('span');tx.className='taskText';tx.textContent=t.text;let tag=document.createElement('span');tag.className='tag';tag.textContent=t.done?'+10 XP':'QUEST';div.append(cb,tx,tag);$('tasks').append(div)});
+}
+function renderMap(){let el=$('monthMap');el.innerHTML='';for(let i=0;i<8;i++){let m=document.createElement('button');m.className='month '+(s.completedMonths.includes(i)?'complete':'')+(i===0?' current':'');m.innerHTML='<strong>ماه '+(i+1)+'</strong><small>'+(s.completedMonths.includes(i)?'✓ فتح شد':'مرحله '+(i+1))+'</small>';m.addEventListener('click',()=>{if(s.completedMonths.includes(i)){s.completedMonths=s.completedMonths.filter(x=>x!==i)}else{s.completedMonths.push(i);s.xp+=50;s.activities.unshift({date:todayKey(),label:'فتح منطقه ماه '+(i+1),xp:50})}save();render()});el.append(m)}}
+function renderBadges(){let defs=[['First Blood',s.minutes>=30],['Question Hunter',s.tests>=20],['Memory Master',s.activities.some(a=>a.label.includes('مرور فعال'))],['Chapter Slayer',s.activities.some(a=>a.label.includes('تکمیل فصل'))],['Century Club',s.xp>=100],['Level Up',level()>=2],['Consistency',Object.keys(s.daily).filter(k=>s.daily[k].minutes>0).length>=5]];$('badges').innerHTML='';defs.forEach(([n,ok])=>{let b=document.createElement('span');b.className='badge '+(ok?'':'lock');b.textContent=(ok?'🏅 ':'🔒 ')+n;$('badges').append(b)})}
+function renderRewards(){let all=[...s.rewards.map((r,i)=>({...r,kind:'default',idx:i})),...s.customRewards.map((r,i)=>({...r,kind:'custom',idx:i}))];$('rewards').innerHTML='';all.forEach(r=>{let row=document.createElement('div');row.className='item';let top=document.createElement('div');top.className='reward';let txt=document.createElement('div');let strong=document.createElement('strong');strong.textContent=r.name;let small=document.createElement('small');small.textContent=r.cost+' XP';txt.append(strong,document.createElement('br'),small);let actions=document.createElement('div');actions.className='row';actions.style.flex='0 0 auto';let claim=document.createElement('button');claim.textContent='دریافت';claim.disabled=s.xp<r.cost;claim.addEventListener('click',()=>{if(confirm('این پاداش را دریافت می‌کنی؟ '+r.name)){s.xp-=r.cost;s.redeemed.unshift({name:r.name,date:todayKey()});s.activities.unshift({date:todayKey(),label:'دریافت پاداش: '+r.name,xp:-r.cost});save();render()}});let edit=document.createElement('button');edit.className='ghost';edit.textContent='ویرایش';edit.addEventListener('click',()=>{let nn=prompt('نام جدید پاداش:',r.name);if(nn===null)return;let cc=prompt('هزینه جدید به XP:',String(r.cost));if(cc===null)return;let cost=parseInt(cc);if(!nn.trim()||!Number.isFinite(cost)||cost<1){alert('نام و هزینه معتبر وارد کن.');return}let target=r.kind==='default'?s.rewards[r.idx]:s.customRewards[r.idx];target.name=nn.trim();target.cost=cost;save();renderRewards()});let del=document.createElement('button');del.className='danger';del.textContent='حذف';del.addEventListener('click',()=>{if(!confirm('این پاداش حذف شود؟'))return;if(r.kind==='default')s.rewards.splice(r.idx,1);else s.customRewards.splice(r.idx,1);save();renderRewards()});actions.append(claim,edit,del);top.append(txt,actions);row.append(top);$('rewards').append(row)})}
+function renderSkills(){$('skills').innerHTML='';s.skills.forEach(sk=>{let ok=s.xp>=sk.unlock;let row=document.createElement('div');row.className='item';row.innerHTML='<div class="itemTop"><strong></strong><span class="tag"></span></div><small></small>';row.querySelector('strong').textContent=sk.name;row.querySelector('.tag').textContent=ok?'🔓 آزاد شد':'🔒 '+sk.unlock+' XP';row.querySelector('small').textContent=sk.detail;$('skills').append(row)})}
+function renderHistory(){$('history').innerHTML='';let arr=s.activities.slice(0,12);if(!arr.length){$('history').innerHTML='<div class="empty">هنوز فعالیتی ثبت نشده؛ اولین پیروزی منتظرته.</div>';return}arr.forEach(a=>{let x=document.createElement('div');x.className='item itemTop';let l=document.createElement('span');l.textContent=a.label;let r=document.createElement('small');r.textContent=a.date+' · '+(a.xp>0?'+':'')+a.xp+' XP';x.append(l,r);$('history').append(x)})}
+$('addTask').addEventListener('click',()=>{let v=$('newTask').value.trim();if(!v)return;let a=s.tasks[todayKey()]||[];a.push({text:v,done:false});s.tasks[todayKey()]=a;$('newTask').value='';save();renderTasks()});
+$('activityType').addEventListener('change',()=>{let t=$('activityType').value;$('activityAmount').value=t==='study'?30:t==='test'?20:1;$('activityHint').textContent={study:'هر ۳۰ دقیقه = ۱۰ XP',test:'هر ۲۰ تست = ۱۵ XP',recall:'یک مبحث = ۱۵ XP',chapter:'یک فصل = ۳۰ XP',exam:'یک آزمون = ۴۰ XP'}[t]});
+$('logActivity').addEventListener('click',()=>{let t=$('activityType').value,n=Math.max(1,Math.min(10000,parseInt($('activityAmount').value)||1)),xp=0,label='',mins=0,tests=0;
+if(t==='study'){mins=n;xp=Math.floor(n/30)*10;label='مطالعه '+n+' دقیقه';}if(t==='test'){tests=n;xp=Math.floor(n/20)*15;label='حل '+n+' تست';}if(t==='recall'){xp=15;label='مرور فعال یک مبحث';}if(t==='chapter'){xp=30;label='تکمیل یک فصل';}if(t==='exam'){xp=40;label='آزمون هفتگی';}
+if(xp===0&&t==='study'){alert('برای دریافت XP حداقل ۳۰ دقیقه ثبت کن. زمان کمتر هم در مجموع مطالعه‌ات ذخیره می‌شود.');}
+s.xp+=xp;s.minutes+=mins;s.tests+=tests;day().xp+=xp;day().minutes+=mins;day().tests+=tests;s.activities.unshift({date:todayKey(),label:label+( $('activityNote').value.trim()?' · '+$('activityNote').value.trim():''),xp});save();$('activityNote').value='';render()});
+$('boardDate').addEventListener('change',e=>{s.boardDate=e.target.value;save();render()});
+$('addReward').addEventListener('click',()=>{let name=$('rewardName').value.trim(),cost=Math.max(1,parseInt($('rewardCost').value)||0);if(!name||!cost){alert('نام و هزینه XP را وارد کن.');return}s.customRewards.push({name,cost});$('rewardName').value='';$('rewardCost').value='';save();renderRewards()});
+$('saveMonth').addEventListener('click',()=>{let v=$('monthNote').value.trim();if(!v)return;s.monthGoals[todayKey().slice(0,7)]=v;save();alert('هدف ماه ذخیره شد!')});
+$('saveJournal').addEventListener('click',()=>{s.journal[todayKey()]=$('journal').value;save();$('journalSaved').textContent=' ذخیره شد ✓'});
+$('journal').value=s.journal[todayKey()]||'';
+$('exportData').addEventListener('click',()=>{let blob=new Blob([JSON.stringify(s,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='neurogenesis-backup.json';a.click();URL.revokeObjectURL(url)});
+$('importData').addEventListener('change',e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let v=JSON.parse(r.result);if(!v||typeof v.xp!=='number')throw Error();s=v;save();render();alert('نسخه پشتیبان بازیابی شد.')}catch(err){alert('فایل پشتیبان معتبر نیست.')}};r.readAsText(f)});
+$('reset').addEventListener('click',()=>{if(confirm('همه اطلاعات این داشبورد پاک شود؟ قبلش نسخه پشتیبان بگیر.')){s=defaultState();save();$('journal').value='';render()}});
+render();
+})();
+</script>
+</body></html>
