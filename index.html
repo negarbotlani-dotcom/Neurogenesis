@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#fff0e5">\n<link rel="manifest" href="manifest.webmanifest">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#fff0e5">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>NEUROGENESIS | 8-Month Evolution</title>
 <style>
 :root{--bg:#fffaf2;--panel:#ffffff;--panel2:#fff3e8;--line:#f0dfd1;--gold:#e58a45;--gold2:#bd5d2d;--text:#3c3440;--muted:#827987;--green:#4b9c78;--blue:#5b8fc4;--pink:#ce78a4;--red:#cf655c;--lav:#8d7ac4}
@@ -159,16 +162,12 @@ $('reset').addEventListener('click',()=>{if(confirm('همه اطلاعات ای�
 render();
 })();
 </script>
- <script>
+<script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./sw.js')
-      .then(function() {
-        console.log('Service Worker registered!');
-      })
-      .catch(function(error) {
-        console.log('Service Worker failed:', error);
-      });
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('./sw.js').catch(function (error) {
+      console.error('Service worker registration failed:', error);
+    });
   });
 }
 </script>
